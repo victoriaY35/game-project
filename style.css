@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'UhBeeJJIBBABBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeJJIBBABBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+html {
+    font-size: 62.5%;
+    }
+    
+*,:before,:after {box-sizing: border-box;}
+    
+/* body에 들어갈수있는 모든태그의 여백빼기 */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,code,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figure,figcaption,footer,header,hgroup,menu,nav,section,main,audio,video {margin: 0; padding: 0;}
+
+/* html5추가 시멘틱엘리먼트를 익스하위버전에서 블럭으로 인식되도록함 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main {display: block}
+
+
+/* button태그에 손모양 커서 */
+button {cursor: pointer;}
+/* button {cursor:auto;} */
+/* 익스하위버전에서 이미지 선없애기 */
+fieldset,img {border: 0; vertical-align: top;}
+
+/* 모바일, 반응형에서 이미지가 원본보다 커지지않게함 */
+img {max-width: 100%;}
+/* 리스트 기호 빼기 */
+
+
+/* 모바일 크롬, 사파리의 텍스트 자동확대 방지*/
+body { -webkit-text-size-adjust: none }
+
+
+/*********************** 공통스타일 *************************/
+/* body에 높이가 없어도 hidden이 걸리면 스크롤바가 사라짐 */
+/* body.on {overflow: hidden;} */
+/* iOS 사파리는 페이지최상단에서만 hidden이 걸리므로 페이지 위로 올라오게함 */
+body.on { overflow: hidden; position: fixed; left:0; top:0; width:100%; }
+
+#wrap {min-width: 320px;}
+
+.game_box {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(190,181,218,0.9066220238095238) 46%, rgba(148,187,233,0.9682466736694678) 100%);
+}
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.game {
+    height: 590px;
+    padding: 20px;
+    border: 4px solid #60ffe2;
+    border-radius: 30px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+h1 {
+    font-family: 'UhBeeJJIBBABBA', sans-serif;
+    font-size: 5rem;
+    color: #6b36c0;
+}
+
+.img_wrap {
+    width: 400px;
+    display: block;
+    margin: 50px auto;
+}
+.img {
+    height: 200px;
+
+}
+
+.print {
+    font-size: 2rem;
+    font-family: 'UhBeeJJIBBABBA', sans-serif;
+}
+.print .result {
+    margin: 20px;
+    color: #293bc5;
+}
+.print .chance {
+    margin: 20px;
+    color: #f74b7c;
+}
+
+.input_line {
+    width: 100px;
+    height: 30px;
+    border: 2px solid #2c7c66;
+}
+.deco01 {
+    background: #00811f;
+    font-size: 2rem;
+    width: 50px;
+    height: 32px;
+    color: white;
+    border: none;
+}
+.deco02 {
+    background: #b83caa;
+    font-size: 2rem;
+    width: 60px;
+    height: 32px;
+    color: white;
+    border: none;
+}
+
+@media(max-width:850px) {
+    h1 {font-size: 4rem;}
+}
+@media(max-width:767px) {
+    h1 {font-size: 2rem;}
+
+} 
